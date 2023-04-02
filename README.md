@@ -45,6 +45,8 @@ $ aireplay -9 <interface>
 # NetworkManager configuration
 Add these lines below to "NetworkManager.conf" and ADD YOUR ADAPTER MAC below [keyfile]
 This will make the Network-Manager ignore the device, and therefore don't cause problems.
+
+### Note - This will affect on RTL8188EU which has monitor mode enabled and it will slowly respond.
 ```
 [device]
 wifi.scan-rand-mac-address=no
